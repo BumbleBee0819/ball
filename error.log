@@ -1,0 +1,324 @@
+In file included from ./../../scenes.h:47:0,
+                 from ./../../main_ball.cpp:37:
+./../../scenes/rotate.h: In member function ‘virtual void RotateTable::Update()’:
+./../../scenes/rotate.h:318:14: warning: variable ‘pos’ set but not used [-Wunused-but-set-variable]
+         Vec3 pos = Vec3(translationSpeed*(1.0f-cosf(time)), 0.5f, 0.0f);
+              ^
+./../../scenes/rotate.h:319:14: warning: variable ‘prevPos’ set but not used [-Wunused-but-set-variable]
+         Vec3 prevPos = Vec3(translationSpeed*(1.0f-cosf(lastTime)), 0.5f, 0.0f);
+              ^
+In file included from ./../../scenes.h:49:0,
+                 from ./../../main_ball.cpp:37:
+./../../scenes/ball.h: In member function ‘virtual void Ball::Initialize()’:
+./../../scenes/ball.h:77:28: error: cannot convert ‘std::vector<Point3>’ to ‘const float*’ for argument ‘1’ to ‘NvFlexExtAsset* NvFlexExtCreateRigidFromMesh(const float*, int, const int*, int, float, float)’
+          cp.particle_radius)     
+                            ^
+./../../scenes/ball.h:51:13: warning: unused variable ‘group’ [-Wunused-variable]
+         int group = 0;
+             ^
+make: *** [build/flexDemoCUDA_release/main_ball.cpp.o] Error 1
+make: *** Waiting for unfinished jobs....
+[0;31m [Error]: /home/wbi/Code/Cloth_Project/flex_cloth/crossdomain_cloth_perception/buildFleX.sh [0m
+[0;31m     ====> Failed to build FleX executables for [ball]! [0m
+Traceback (most recent call last):
+  File "main_simulate.py", line 187, in <module>
+    main_simulate()
+  File "main_simulate.py", line 178, in main_simulate
+    lines_stdout = runCmd(" ".join(sim_cmd), extra_vars=env, verbose=args.flex_verbose)
+  File "/home/wbi/Code/Cloth_Project/flex_cloth/crossdomain_cloth_perception/utils.py", line 895, in runCmd
+    print(line)
+OSError: [Errno 5] Input/output error
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='UTF-8'>
+OSError: [Errno 5] Input/output error
+run.sh: line 175: echo: write error: Input/output error
+load_config.sh: line 23: echo: write error: Input/output error
+run.sh: line 197: echo: write error: Input/output error
+load_config.sh: line 15: echo: write error: Input/output error
+load_config.sh: line 15: echo: write error: Input/output error
+load_config.sh: line 15: echo: write error: Input/output error
+['Init', 'ResetSimGlobals', 'ResetVisGlobals', 'ResetCoupledAssets', 'ResetSim', '0.021678,0.166291,-0.108982', '', ' ---- Simulation Params ----', 'substeps:                  7', 'radius:                    0.150000', 'num_planes:                0', 'iterations:                8', 'restitution:               0.000000', 'dissipation:               0.000000', 'damping:                   0.000000', 'drag:                      0.050000', 'lift:                      0.100000', 'dynamic_friction:          0.162500', 'static_friction:           0.180000', 'particle_friction:         0.016250', 'collision_distance:        0.020000', 'shape_collision_margin:    0.002000', 'particle_collision_margin: 0.000000', 'relaxation_factor:         1.300000', 'relaxation_mode:           1', 'viscosity:                 0.000000', 'light_distance:            2.000000', 'saveClothPerSimStep:       1', '', '', ' ---------------------------', 'MainLoop', '']
+Traceback (most recent call last):
+  File "main_simulate.py", line 187, in <module>
+    main_simulate()
+  File "main_simulate.py", line 178, in main_simulate
+    lines_stdout = runCmd(" ".join(sim_cmd), extra_vars=env, verbose=args.flex_verbose)
+  File "/home/wbi/Code/Cloth_Project/flex_cloth/crossdomain_cloth_perception/utils.py", line 895, in runCmd
+    print(line)
+OSError: [Errno 5] Input/output error
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='UTF-8'>
+OSError: [Errno 5] Input/output error
+Traceback (most recent call last):
+  File "main_simulate.py", line 187, in <module>
+    main_simulate()
+  File "main_simulate.py", line 178, in main_simulate
+    lines_stdout = runCmd(" ".join(sim_cmd), extra_vars=env, verbose=args.flex_verbose)
+  File "/home/wbi/Code/Cloth_Project/flex_cloth/crossdomain_cloth_perception/utils.py", line 895, in runCmd
+    print(line)
+OSError: [Errno 5] Input/output error
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='UTF-8'>
+OSError: [Errno 5] Input/output error
+Traceback (most recent call last):
+  File "main_simulate.py", line 187, in <module>
+    main_simulate()
+  File "main_simulate.py", line 178, in main_simulate
+    lines_stdout = runCmd(" ".join(sim_cmd), extra_vars=env, verbose=args.flex_verbose)
+  File "/home/wbi/Code/Cloth_Project/flex_cloth/crossdomain_cloth_perception/utils.py", line 895, in runCmd
+    print(line)
+OSError: [Errno 5] Input/output error
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='UTF-8'>
+OSError: [Errno 5] Input/output error
+Traceback (most recent call last):
+  File "main_simulate.py", line 187, in <module>
+    main_simulate()
+  File "main_simulate.py", line 178, in main_simulate
+    lines_stdout = runCmd(" ".join(sim_cmd), extra_vars=env, verbose=args.flex_verbose)
+  File "/home/wbi/Code/Cloth_Project/flex_cloth/crossdomain_cloth_perception/utils.py", line 895, in runCmd
+    print(line)
+OSError: [Errno 5] Input/output error
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='UTF-8'>
+OSError: [Errno 5] Input/output error
+Traceback (most recent call last):
+  File "main_simulate.py", line 187, in <module>
+    main_simulate()
+  File "main_simulate.py", line 178, in main_simulate
+    lines_stdout = runCmd(" ".join(sim_cmd), extra_vars=env, verbose=args.flex_verbose)
+  File "/home/wbi/Code/Cloth_Project/flex_cloth/crossdomain_cloth_perception/utils.py", line 895, in runCmd
+    print(line)
+OSError: [Errno 5] Input/output error
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='UTF-8'>
+OSError: [Errno 5] Input/output error
+Traceback (most recent call last):
+  File "main_simulate.py", line 187, in <module>
+    main_simulate()
+  File "main_simulate.py", line 178, in main_simulate
+    lines_stdout = runCmd(" ".join(sim_cmd), extra_vars=env, verbose=args.flex_verbose)
+  File "/home/wbi/Code/Cloth_Project/flex_cloth/crossdomain_cloth_perception/utils.py", line 895, in runCmd
+    print(line)
+OSError: [Errno 5] Input/output error
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='UTF-8'>
+OSError: [Errno 5] Input/output error
+Traceback (most recent call last):
+  File "main_simulate.py", line 187, in <module>
+    main_simulate()
+  File "main_simulate.py", line 178, in main_simulate
+    lines_stdout = runCmd(" ".join(sim_cmd), extra_vars=env, verbose=args.flex_verbose)
+  File "/home/wbi/Code/Cloth_Project/flex_cloth/crossdomain_cloth_perception/utils.py", line 895, in runCmd
+    print(line)
+OSError: [Errno 5] Input/output error
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='UTF-8'>
+OSError: [Errno 5] Input/output error
+run.sh: line 175: echo: write error: Input/output error
+load_config.sh: line 23: echo: write error: Input/output error
+run.sh: line 197: echo: write error: Input/output error
+load_config.sh: line 15: echo: write error: Input/output error
+load_config.sh: line 15: echo: write error: Input/output error
+load_config.sh: line 15: echo: write error: Input/output error
+run.sh: line 175: echo: write error: Input/output error
+load_config.sh: line 23: echo: write error: Input/output error
+run.sh: line 197: echo: write error: Input/output error
+load_config.sh: line 15: echo: write error: Input/output error
+load_config.sh: line 15: echo: write error: Input/output error
+load_config.sh: line 15: echo: write error: Input/output error
+run.sh: line 175: echo: write error: Input/output error
+load_config.sh: line 23: echo: write error: Input/output error
+run.sh: line 197: echo: write error: Input/output error
+load_config.sh: line 15: echo: write error: Input/output error
+load_config.sh: line 15: echo: write error: Input/output error
+load_config.sh: line 15: echo: write error: Input/output error
+run.sh: line 175: echo: write error: Input/output error
+load_config.sh: line 23: echo: write error: Input/output error
+run.sh: line 197: echo: write error: Input/output error
+load_config.sh: line 15: echo: write error: Input/output error
+load_config.sh: line 15: echo: write error: Input/output error
+load_config.sh: line 15: echo: write error: Input/output error
+run.sh: line 175: echo: write error: Input/output error
+load_config.sh: line 23: echo: write error: Input/output error
+run.sh: line 197: echo: write error: Input/output error
+load_config.sh: line 15: echo: write error: Input/output error
+load_config.sh: line 15: echo: write error: Input/output error
+load_config.sh: line 15: echo: write error: Input/output error
+run.sh: line 175: echo: write error: Input/output error
+load_config.sh: line 23: echo: write error: Input/output error
+run.sh: line 197: echo: write error: Input/output error
+load_config.sh: line 15: echo: write error: Input/output error
+load_config.sh: line 15: echo: write error: Input/output error
+load_config.sh: line 15: echo: write error: Input/output error
+run.sh: line 175: echo: write error: Input/output error
+load_config.sh: line 23: echo: write error: Input/output error
+run.sh: line 197: echo: write error: Input/output error
+load_config.sh: line 15: echo: write error: Input/output error
+load_config.sh: line 15: echo: write error: Input/output error
+load_config.sh: line 15: echo: write error: Input/output error
+run.sh: line 175: echo: write error: Input/output error
+load_config.sh: line 23: echo: write error: Input/output error
+run.sh: line 197: echo: write error: Input/output error
+load_config.sh: line 15: echo: write error: Input/output error
+load_config.sh: line 15: echo: write error: Input/output error
+load_config.sh: line 15: echo: write error: Input/output error
+run.sh: line 175: echo: write error: Input/output error
+load_config.sh: line 23: echo: write error: Input/output error
+run.sh: line 197: echo: write error: Input/output error
+load_config.sh: line 15: echo: write error: Input/output error
+load_config.sh: line 15: echo: write error: Input/output error
+load_config.sh: line 15: echo: write error: Input/output error
+Traceback (most recent call last):
+  File "main_simulate.py", line 187, in <module>
+    main_simulate()
+  File "main_simulate.py", line 178, in main_simulate
+    lines_stdout = runCmd(" ".join(sim_cmd), extra_vars=env, verbose=args.flex_verbose)
+  File "/home/wbi/Code/Cloth_Project/flex_cloth/crossdomain_cloth_perception/utils.py", line 895, in runCmd
+    print(line)
+OSError: [Errno 5] Input/output error
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='UTF-8'>
+OSError: [Errno 5] Input/output error
+Assembler messages:
+Error: can't open /tmp/cccLoZZN.s for reading: No such file or directory
+make: *** [build/flexExtCUDA_release/core/voxelize.cpp.o] Error 1
+make: *** Waiting for unfinished jobs....
+run.sh: line 175: echo: write error: Input/output error
+load_config.sh: line 23: echo: write error: Input/output error
+run.sh: line 197: echo: write error: Input/output error
+load_config.sh: line 15: echo: write error: Input/output error
+load_config.sh: line 15: echo: write error: Input/output error
+load_config.sh: line 15: echo: write error: Input/output error
+Assembler messages:
+Error: can't open /tmp/ccxvvsxg.s for reading: No such file or directory
+make: *** [build/flexExtCUDA_release/extensions/flexExtCloth.cpp.o] Error 1
+Traceback (most recent call last):
+  File "main_simulate.py", line 187, in <module>
+    main_simulate()
+  File "main_simulate.py", line 178, in main_simulate
+    lines_stdout = runCmd(" ".join(sim_cmd), extra_vars=env, verbose=args.flex_verbose)
+  File "/home/wbi/Code/Cloth_Project/flex_cloth/crossdomain_cloth_perception/utils.py", line 895, in runCmd
+    print(line)
+OSError: [Errno 5] Input/output error
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='UTF-8'>
+OSError: [Errno 5] Input/output error
+Traceback (most recent call last):
+  File "main_simulate.py", line 187, in <module>
+    main_simulate()
+  File "main_simulate.py", line 178, in main_simulate
+    lines_stdout = runCmd(" ".join(sim_cmd), extra_vars=env, verbose=args.flex_verbose)
+  File "/home/wbi/Code/Cloth_Project/flex_cloth/crossdomain_cloth_perception/utils.py", line 895, in runCmd
+    print(line)
+OSError: [Errno 5] Input/output error
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='UTF-8'>
+OSError: [Errno 5] Input/output error
+Traceback (most recent call last):
+  File "main_simulate.py", line 187, in <module>
+    main_simulate()
+  File "main_simulate.py", line 178, in main_simulate
+    lines_stdout = runCmd(" ".join(sim_cmd), extra_vars=env, verbose=args.flex_verbose)
+  File "/home/wbi/Code/Cloth_Project/flex_cloth/crossdomain_cloth_perception/utils.py", line 895, in runCmd
+    print(line)
+OSError: [Errno 5] Input/output error
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='UTF-8'>
+OSError: [Errno 5] Input/output error
+Traceback (most recent call last):
+  File "main_simulate.py", line 187, in <module>
+    main_simulate()
+  File "main_simulate.py", line 178, in main_simulate
+    lines_stdout = runCmd(" ".join(sim_cmd), extra_vars=env, verbose=args.flex_verbose)
+  File "/home/wbi/Code/Cloth_Project/flex_cloth/crossdomain_cloth_perception/utils.py", line 895, in runCmd
+    print(line)
+OSError: [Errno 5] Input/output error
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='UTF-8'>
+OSError: [Errno 5] Input/output error
+run.sh: line 175: echo: write error: Input/output error
+load_config.sh: line 23: echo: write error: Input/output error
+run.sh: line 197: echo: write error: Input/output error
+load_config.sh: line 15: echo: write error: Input/output error
+load_config.sh: line 15: echo: write error: Input/output error
+load_config.sh: line 15: echo: write error: Input/output error
+run.sh: line 175: echo: write error: Input/output error
+load_config.sh: line 23: echo: write error: Input/output error
+run.sh: line 197: echo: write error: Input/output error
+load_config.sh: line 15: echo: write error: Input/output error
+load_config.sh: line 15: echo: write error: Input/output error
+load_config.sh: line 15: echo: write error: Input/output error
+run.sh: line 175: echo: write error: Input/output error
+load_config.sh: line 23: echo: write error: Input/output error
+run.sh: line 197: echo: write error: Input/output error
+load_config.sh: line 15: echo: write error: Input/output error
+load_config.sh: line 15: echo: write error: Input/output error
+load_config.sh: line 15: echo: write error: Input/output error
+run.sh: line 175: echo: write error: Input/output error
+load_config.sh: line 23: echo: write error: Input/output error
+run.sh: line 197: echo: write error: Input/output error
+load_config.sh: line 15: echo: write error: Input/output error
+load_config.sh: line 15: echo: write error: Input/output error
+load_config.sh: line 15: echo: write error: Input/output error
+Assembler messages:
+Error: can't open /tmp/ccrGFmZy.s for reading: No such file or directory
+make: *** [build/flexExtCUDA_release/core/sdf.cpp.o] Error 1
+Traceback (most recent call last):
+  File "main_simulate.py", line 187, in <module>
+    main_simulate()
+  File "main_simulate.py", line 178, in main_simulate
+    lines_stdout = runCmd(" ".join(sim_cmd), extra_vars=env, verbose=args.flex_verbose)
+  File "/home/wbi/Code/Cloth_Project/flex_cloth/crossdomain_cloth_perception/utils.py", line 895, in runCmd
+    print(line)
+OSError: [Errno 5] Input/output error
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='UTF-8'>
+OSError: [Errno 5] Input/output error
+run.sh: line 175: echo: write error: Input/output error
+load_config.sh: line 23: echo: write error: Input/output error
+run.sh: line 197: echo: write error: Input/output error
+load_config.sh: line 15: echo: write error: Input/output error
+load_config.sh: line 15: echo: write error: Input/output error
+load_config.sh: line 15: echo: write error: Input/output error
+Traceback (most recent call last):
+  File "main_simulate.py", line 187, in <module>
+    main_simulate()
+  File "main_simulate.py", line 178, in main_simulate
+    lines_stdout = runCmd(" ".join(sim_cmd), extra_vars=env, verbose=args.flex_verbose)
+  File "/home/wbi/Code/Cloth_Project/flex_cloth/crossdomain_cloth_perception/utils.py", line 895, in runCmd
+    print(line)
+OSError: [Errno 5] Input/output error
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='UTF-8'>
+OSError: [Errno 5] Input/output error
+Traceback (most recent call last):
+  File "main_simulate.py", line 187, in <module>
+    main_simulate()
+  File "main_simulate.py", line 178, in main_simulate
+    lines_stdout = runCmd(" ".join(sim_cmd), extra_vars=env, verbose=args.flex_verbose)
+  File "/home/wbi/Code/Cloth_Project/flex_cloth/crossdomain_cloth_perception/utils.py", line 895, in runCmd
+    print(line)
+OSError: [Errno 5] Input/output error
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='UTF-8'>
+OSError: [Errno 5] Input/output error
+run.sh: line 175: echo: write error: Input/output error
+load_config.sh: line 23: echo: write error: Input/output error
+run.sh: line 197: echo: write error: Input/output error
+load_config.sh: line 15: echo: write error: Input/output error
+load_config.sh: line 15: echo: write error: Input/output error
+load_config.sh: line 15: echo: write error: Input/output error
+run.sh: line 175: echo: write error: Input/output error
+load_config.sh: line 23: echo: write error: Input/output error
+run.sh: line 197: echo: write error: Input/output error
+load_config.sh: line 15: echo: write error: Input/output error
+load_config.sh: line 15: echo: write error: Input/output error
+load_config.sh: line 15: echo: write error: Input/output error
+Assembler messages:
+Error: can't open /tmp/cc34E5jq.s for reading: No such file or directory
+make: *** [build/flexExtCUDA_release/extensions/flexExtSoft.cpp.o] Error 1
+make: write error: stdout
+[0;31m [Error]: /home/wbi/Code/Cloth_Project/flex_cloth/crossdomain_cloth_perception/buildFleX.sh [0m
+[0;31m     ====> Failed to build FleX executables for [ball]! [0m
+load_config.sh: line 19: echo: write error: Input/output error
+Traceback (most recent call last):
+  File "main_simulate.py", line 187, in <module>
+    main_simulate()
+  File "main_simulate.py", line 178, in main_simulate
+    lines_stdout = runCmd(" ".join(sim_cmd), extra_vars=env, verbose=args.flex_verbose)
+  File "/home/wbi/Code/Cloth_Project/flex_cloth/crossdomain_cloth_perception/utils.py", line 895, in runCmd
+    print(line)
+OSError: [Errno 5] Input/output error
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='UTF-8'>
+OSError: [Errno 5] Input/output error
+run.sh: line 175: echo: write error: Input/output error
+load_config.sh: line 23: echo: write error: Input/output error
+run.sh: line 197: echo: write error: Input/output error
+load_config.sh: line 15: echo: write error: Input/output error
+load_config.sh: line 15: echo: write error: Input/output error
+load_config.sh: line 15: echo: write error: Input/output error

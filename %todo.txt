@@ -1,0 +1,18 @@
+1. The sequence of UpdateWind() and Updatemeshes
+2. Move all updating functions to the header file
+3. Config file is overwritted.
+
+4. subiter iter -> solve tearing....
+5. move the bench cloth further in the x-axis
+6. Make the ball scene similar to the bench one: add the ramp + update the ball
+7. Print out the simulation time.
+
+
+
+#NOTE:  This must be the first call in order to work properly!
+
+
+
+
+07/30
+1. [Run.sh]: accept --exp="wind|drape|..." as argument; copy main_wind.cpp to the correct loction.

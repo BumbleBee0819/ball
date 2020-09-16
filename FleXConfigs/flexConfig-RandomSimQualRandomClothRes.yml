@@ -1,0 +1,25 @@
+
+#bend_stiffness: 0.5 #original 0.8
+#shear_stiffness: 0.4 #original 0.5
+#stretch_stiffness: 0.2 #original 1.0
+stiffness: 0.0 # default 0.8
+
+#friction: 0.1625 # i.e. dynamic friction
+friction: 1.1 # default 1.0
+
+fix_cam: True
+cam_tilt: 15
+cam_offset_y: -0.5
+
+
+steps: 155 # default 155
+substeps: 23 # default 22
+subiters: 5  # default 4        # solver iterations per substep
+cloth_size: 0 # default 210
+particle_size: 0.0078
+#cloth_size: 150
+#particle_size: 0.015
+extra_cp_spacing: 0.0
+extra_cp_rad_mult: 1.0
+drag: 0.09
+

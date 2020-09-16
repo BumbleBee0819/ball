@@ -1,0 +1,53 @@
+0. Run cuda_test to start cuda....
+
+
+###########################################################
+make -f Makefile.wind clean && make -f Makefile.wind -j 4
+##########################################################
+
+
+
+
+1. Sequence
+	Init
+	ResetSimGlobals
+	ResetVisGlobals
+	ResetSim
+
+
+	UpdateFrame -> UpdateSimmapped -> UpdateWind -> UpdateScene ->
+	UpdateSimpostmap -> SyncScene -> REPEAT 
+	
+
+
+2. Define parameter:
+    Config file: [-config=./FleXConfigs/flexConfig.yml]
+
+    [ flexConfig.yml > --para ]: If not defined in the config file, use --para input. Otherwise, use the one defined in the config file.
+
+
+    [wb] CHANGE: --para > flexConfig.yml
+
+
+
+
+
+To run: 1) run_demo.sh;   OR   2)python3 py111_PyFleX.py 
+
+
+
+
+
+self.datasetPath = 'dataset/trialObjs/wind/'
+self.stimuliPath = 'experiments/renderings/trialObjs/wind'
+
+[FleX output] obj => /experiments/renderings/trialObjs/wind
+
+
+
+
+[wind]
+
+bs>4 bad....
+
+

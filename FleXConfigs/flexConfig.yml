@@ -1,0 +1,56 @@
+############################################################################
+# Script Name                : flexConfig.yml
+# Description                : Set FleX simulation paras
+# Date                       : 03/08/2020
+# Contact                    : wenyan.bi@yale.edu
+############################################################################
+
+
+# -----------------------------------------------------------#
+# If the following paras are not defined by user input when
+# running main_simulate.py (i.e., the values are -1), use
+# the values defined here. Otherwise, use the user inputs.
+# -----------------------------------------------------------#
+mass: 1.0                   # cp.mass
+bend_stiffness: 1.0         # cp.bend_stiffness
+shear_stiffness: 1.0        # cp.shear_stiffness
+stretch_stiffness: 1.0      # cp.stretch_stiffness    
+drag: 0.1                   # g_params.drag:
+                            #   ---> This adds a dummy drag force
+                            #       Low value (0.1) generates softer
+                            #       cloth; Large value (1.0) can
+                            #       result in very weird dynamics.   
+lift: 0.1                   # g_params.lift
+friction: 2.0               # g_params.dynamicFriction
+
+
+# -----------------------------------------------------------#
+# The following paras are only defined in this config file
+# -----------------------------------------------------------#
+steps: 200                  # n_iters:
+                            #   ---> Total frames
+substeps: 100                 # g_numSubsteps:
+                            #   ---> Larger values generate better reulsts
+subiters: 80                # g_params.numIterations [solver iterations per substep]
+extra_cp_spacing: 0.0       # cp.extra_cp_spacing: default 0.0
+extra_cp_rad_mult: 1.0      # cp.extra_cp_rad_mult [larger number results in larger cloth]
+
+#restitution:                # g_params.restitution 
+#dissipation:                # g_params.dissipation 
+#damping:                    # g_params.damping
+#coll_distance:              # g_params.collisionDistance
+#shape_coll_margin:          # g_params.shapeCollisionMargin
+#particle_coll_margin:       # g_params.particleCollisionMargin
+
+
+# -----------------------------------------------------------#
+# The following paras are only defined in <main_simulate.py>
+# -----------------------------------------------------------#
+# windstrength:         --windstrength
+# obj_scale:            --scale
+# use_quat:             --useQuat
+# particle_radius:      --psize (default 0.0078)
+# clothsize             --clothNumParticles (default 210):
+#                         clothsize * particle_radius == constant
+# g_clothNumParticles   --clothNumParticles
+

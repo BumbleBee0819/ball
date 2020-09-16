@@ -1,0 +1,180 @@
+build/flexDemoCUDA_release/main_ball.cpp.o: ../../main_ball.cpp \
+ ../../../core/types.h ../../../core/maths.h ../../../core/core.h \
+ ../../../core/vec2.h ../../../core/vec3.h ../../../core/vec4.h \
+ ../../../core/quat.h ../../../core/point3.h ../../../core/mat22.h \
+ ../../../core/mat33.h ../../../core/mat44.h ../../../core/matnn.h \
+ ../../../core/platform.h ../../../core/mesh.h ../../../core/voxelize.h \
+ ../../../core/sdf.h ../../../core/pfm.h ../../../core/tga.h \
+ ../../../core/perlin.h ../../../core/convex.h ../../../core/cloth.h \
+ ../../../external/SDL2-2.0.4/include/SDL.h \
+ ../../../external/SDL2-2.0.4/include/SDL_main.h \
+ ../../../external/SDL2-2.0.4/include/SDL_stdinc.h \
+ ../../../external/SDL2-2.0.4/include/SDL_config.h \
+ ../../../external/SDL2-2.0.4/include/SDL_platform.h \
+ ../../../external/SDL2-2.0.4/include/begin_code.h \
+ ../../../external/SDL2-2.0.4/include/close_code.h \
+ ../../../external/SDL2-2.0.4/include/SDL_assert.h \
+ ../../../external/SDL2-2.0.4/include/SDL_atomic.h \
+ ../../../external/SDL2-2.0.4/include/SDL_audio.h \
+ ../../../external/SDL2-2.0.4/include/SDL_error.h \
+ ../../../external/SDL2-2.0.4/include/SDL_endian.h \
+ ../../../external/SDL2-2.0.4/include/SDL_mutex.h \
+ ../../../external/SDL2-2.0.4/include/SDL_thread.h \
+ ../../../external/SDL2-2.0.4/include/SDL_rwops.h \
+ ../../../external/SDL2-2.0.4/include/SDL_clipboard.h \
+ ../../../external/SDL2-2.0.4/include/SDL_cpuinfo.h \
+ ../../../external/SDL2-2.0.4/include/SDL_events.h \
+ ../../../external/SDL2-2.0.4/include/SDL_video.h \
+ ../../../external/SDL2-2.0.4/include/SDL_pixels.h \
+ ../../../external/SDL2-2.0.4/include/SDL_rect.h \
+ ../../../external/SDL2-2.0.4/include/SDL_surface.h \
+ ../../../external/SDL2-2.0.4/include/SDL_blendmode.h \
+ ../../../external/SDL2-2.0.4/include/SDL_keyboard.h \
+ ../../../external/SDL2-2.0.4/include/SDL_keycode.h \
+ ../../../external/SDL2-2.0.4/include/SDL_scancode.h \
+ ../../../external/SDL2-2.0.4/include/SDL_mouse.h \
+ ../../../external/SDL2-2.0.4/include/SDL_joystick.h \
+ ../../../external/SDL2-2.0.4/include/SDL_gamecontroller.h \
+ ../../../external/SDL2-2.0.4/include/SDL_quit.h \
+ ../../../external/SDL2-2.0.4/include/SDL_gesture.h \
+ ../../../external/SDL2-2.0.4/include/SDL_touch.h \
+ ../../../external/SDL2-2.0.4/include/SDL_filesystem.h \
+ ../../../external/SDL2-2.0.4/include/SDL_haptic.h \
+ ../../../external/SDL2-2.0.4/include/SDL_hints.h \
+ ../../../external/SDL2-2.0.4/include/SDL_loadso.h \
+ ../../../external/SDL2-2.0.4/include/SDL_log.h \
+ ../../../external/SDL2-2.0.4/include/SDL_messagebox.h \
+ ../../../external/SDL2-2.0.4/include/SDL_power.h \
+ ../../../external/SDL2-2.0.4/include/SDL_render.h \
+ ../../../external/SDL2-2.0.4/include/SDL_system.h \
+ ../../../external/SDL2-2.0.4/include/SDL_timer.h \
+ ../../../external/SDL2-2.0.4/include/SDL_version.h \
+ ../../../external/yaml-cpp/include/yaml-cpp/yaml.h \
+ ../../../external/yaml-cpp/include/yaml-cpp/parser.h \
+ ../../../external/yaml-cpp/include/yaml-cpp/dll.h \
+ ../../../external/yaml-cpp/include/yaml-cpp/noncopyable.h \
+ ../../../external/yaml-cpp/include/yaml-cpp/emitter.h \
+ ../../../external/yaml-cpp/include/yaml-cpp/binary.h \
+ ../../../external/yaml-cpp/include/yaml-cpp/emitterdef.h \
+ ../../../external/yaml-cpp/include/yaml-cpp/emittermanip.h \
+ ../../../external/yaml-cpp/include/yaml-cpp/null.h \
+ ../../../external/yaml-cpp/include/yaml-cpp/ostream_wrapper.h \
+ ../../../external/yaml-cpp/include/yaml-cpp/emitterstyle.h \
+ ../../../external/yaml-cpp/include/yaml-cpp/stlemitter.h \
+ ../../../external/yaml-cpp/include/yaml-cpp/exceptions.h \
+ ../../../external/yaml-cpp/include/yaml-cpp/mark.h \
+ ../../../external/yaml-cpp/include/yaml-cpp/traits.h \
+ ../../../external/yaml-cpp/include/yaml-cpp/node/node.h \
+ ../../../external/yaml-cpp/include/yaml-cpp/node/detail/bool_type.h \
+ ../../../external/yaml-cpp/include/yaml-cpp/node/detail/iterator_fwd.h \
+ ../../../external/yaml-cpp/include/yaml-cpp/node/ptr.h \
+ ../../../external/yaml-cpp/include/yaml-cpp/node/type.h \
+ ../../../external/yaml-cpp/include/yaml-cpp/node/impl.h \
+ ../../../external/yaml-cpp/include/yaml-cpp/node/iterator.h \
+ ../../../external/yaml-cpp/include/yaml-cpp/node/detail/iterator.h \
+ ../../../external/yaml-cpp/include/yaml-cpp/node/detail/node_iterator.h \
+ ../../../external/yaml-cpp/include/yaml-cpp/node/detail/memory.h \
+ ../../../external/yaml-cpp/include/yaml-cpp/node/detail/node.h \
+ ../../../external/yaml-cpp/include/yaml-cpp/node/detail/node_ref.h \
+ ../../../external/yaml-cpp/include/yaml-cpp/node/detail/node_data.h \
+ ../../../external/yaml-cpp/include/yaml-cpp/node/convert.h \
+ ../../../external/yaml-cpp/include/yaml-cpp/node/detail/impl.h \
+ ../../../external/yaml-cpp/include/yaml-cpp/node/parse.h \
+ ../../../external/yaml-cpp/include/yaml-cpp/node/emit.h \
+ ../../../include/NvFlex.h ../../../include/NvFlexExt.h \
+ ../../../include/NvFlex.h ../../../include/NvFlexDevice.h \
+ ../../shaders.h ../../imgui.h ../../globals.h ../../physics.h \
+ ../../helpers.h ../../scenes.h ../../scenes/softbody.h \
+ ../../scenes/rigid_drop.h ../../scenes/banana_drop.h ../../scenes/wind.h \
+ ../../scenes/rotate.h ../../scenes/drape.h ../../scenes/ball.h \
+ ../../benchmark.h ../../controller.h
+../../main_ball.cpp :
+ ../../../core/types.h ../../../core/maths.h ../../../core/core.h :
+ ../../../core/vec2.h ../../../core/vec3.h ../../../core/vec4.h :
+ ../../../core/quat.h ../../../core/point3.h ../../../core/mat22.h :
+ ../../../core/mat33.h ../../../core/mat44.h ../../../core/matnn.h :
+ ../../../core/platform.h ../../../core/mesh.h ../../../core/voxelize.h :
+ ../../../core/sdf.h ../../../core/pfm.h ../../../core/tga.h :
+ ../../../core/perlin.h ../../../core/convex.h ../../../core/cloth.h :
+ ../../../external/SDL2-2.0.4/include/SDL.h :
+ ../../../external/SDL2-2.0.4/include/SDL_main.h :
+ ../../../external/SDL2-2.0.4/include/SDL_stdinc.h :
+ ../../../external/SDL2-2.0.4/include/SDL_config.h :
+ ../../../external/SDL2-2.0.4/include/SDL_platform.h :
+ ../../../external/SDL2-2.0.4/include/begin_code.h :
+ ../../../external/SDL2-2.0.4/include/close_code.h :
+ ../../../external/SDL2-2.0.4/include/SDL_assert.h :
+ ../../../external/SDL2-2.0.4/include/SDL_atomic.h :
+ ../../../external/SDL2-2.0.4/include/SDL_audio.h :
+ ../../../external/SDL2-2.0.4/include/SDL_error.h :
+ ../../../external/SDL2-2.0.4/include/SDL_endian.h :
+ ../../../external/SDL2-2.0.4/include/SDL_mutex.h :
+ ../../../external/SDL2-2.0.4/include/SDL_thread.h :
+ ../../../external/SDL2-2.0.4/include/SDL_rwops.h :
+ ../../../external/SDL2-2.0.4/include/SDL_clipboard.h :
+ ../../../external/SDL2-2.0.4/include/SDL_cpuinfo.h :
+ ../../../external/SDL2-2.0.4/include/SDL_events.h :
+ ../../../external/SDL2-2.0.4/include/SDL_video.h :
+ ../../../external/SDL2-2.0.4/include/SDL_pixels.h :
+ ../../../external/SDL2-2.0.4/include/SDL_rect.h :
+ ../../../external/SDL2-2.0.4/include/SDL_surface.h :
+ ../../../external/SDL2-2.0.4/include/SDL_blendmode.h :
+ ../../../external/SDL2-2.0.4/include/SDL_keyboard.h :
+ ../../../external/SDL2-2.0.4/include/SDL_keycode.h :
+ ../../../external/SDL2-2.0.4/include/SDL_scancode.h :
+ ../../../external/SDL2-2.0.4/include/SDL_mouse.h :
+ ../../../external/SDL2-2.0.4/include/SDL_joystick.h :
+ ../../../external/SDL2-2.0.4/include/SDL_gamecontroller.h :
+ ../../../external/SDL2-2.0.4/include/SDL_quit.h :
+ ../../../external/SDL2-2.0.4/include/SDL_gesture.h :
+ ../../../external/SDL2-2.0.4/include/SDL_touch.h :
+ ../../../external/SDL2-2.0.4/include/SDL_filesystem.h :
+ ../../../external/SDL2-2.0.4/include/SDL_haptic.h :
+ ../../../external/SDL2-2.0.4/include/SDL_hints.h :
+ ../../../external/SDL2-2.0.4/include/SDL_loadso.h :
+ ../../../external/SDL2-2.0.4/include/SDL_log.h :
+ ../../../external/SDL2-2.0.4/include/SDL_messagebox.h :
+ ../../../external/SDL2-2.0.4/include/SDL_power.h :
+ ../../../external/SDL2-2.0.4/include/SDL_render.h :
+ ../../../external/SDL2-2.0.4/include/SDL_system.h :
+ ../../../external/SDL2-2.0.4/include/SDL_timer.h :
+ ../../../external/SDL2-2.0.4/include/SDL_version.h :
+ ../../../external/yaml-cpp/include/yaml-cpp/yaml.h :
+ ../../../external/yaml-cpp/include/yaml-cpp/parser.h :
+ ../../../external/yaml-cpp/include/yaml-cpp/dll.h :
+ ../../../external/yaml-cpp/include/yaml-cpp/noncopyable.h :
+ ../../../external/yaml-cpp/include/yaml-cpp/emitter.h :
+ ../../../external/yaml-cpp/include/yaml-cpp/binary.h :
+ ../../../external/yaml-cpp/include/yaml-cpp/emitterdef.h :
+ ../../../external/yaml-cpp/include/yaml-cpp/emittermanip.h :
+ ../../../external/yaml-cpp/include/yaml-cpp/null.h :
+ ../../../external/yaml-cpp/include/yaml-cpp/ostream_wrapper.h :
+ ../../../external/yaml-cpp/include/yaml-cpp/emitterstyle.h :
+ ../../../external/yaml-cpp/include/yaml-cpp/stlemitter.h :
+ ../../../external/yaml-cpp/include/yaml-cpp/exceptions.h :
+ ../../../external/yaml-cpp/include/yaml-cpp/mark.h :
+ ../../../external/yaml-cpp/include/yaml-cpp/traits.h :
+ ../../../external/yaml-cpp/include/yaml-cpp/node/node.h :
+ ../../../external/yaml-cpp/include/yaml-cpp/node/detail/bool_type.h :
+ ../../../external/yaml-cpp/include/yaml-cpp/node/detail/iterator_fwd.h :
+ ../../../external/yaml-cpp/include/yaml-cpp/node/ptr.h :
+ ../../../external/yaml-cpp/include/yaml-cpp/node/type.h :
+ ../../../external/yaml-cpp/include/yaml-cpp/node/impl.h :
+ ../../../external/yaml-cpp/include/yaml-cpp/node/iterator.h :
+ ../../../external/yaml-cpp/include/yaml-cpp/node/detail/iterator.h :
+ ../../../external/yaml-cpp/include/yaml-cpp/node/detail/node_iterator.h :
+ ../../../external/yaml-cpp/include/yaml-cpp/node/detail/memory.h :
+ ../../../external/yaml-cpp/include/yaml-cpp/node/detail/node.h :
+ ../../../external/yaml-cpp/include/yaml-cpp/node/detail/node_ref.h :
+ ../../../external/yaml-cpp/include/yaml-cpp/node/detail/node_data.h :
+ ../../../external/yaml-cpp/include/yaml-cpp/node/convert.h :
+ ../../../external/yaml-cpp/include/yaml-cpp/node/detail/impl.h :
+ ../../../external/yaml-cpp/include/yaml-cpp/node/parse.h :
+ ../../../external/yaml-cpp/include/yaml-cpp/node/emit.h :
+ ../../../include/NvFlex.h ../../../include/NvFlexExt.h :
+ ../../../include/NvFlex.h ../../../include/NvFlexDevice.h :
+ ../../shaders.h ../../imgui.h ../../globals.h ../../physics.h :
+ ../../helpers.h ../../scenes.h ../../scenes/softbody.h :
+ ../../scenes/rigid_drop.h ../../scenes/banana_drop.h ../../scenes/wind.h :
+ ../../scenes/rotate.h ../../scenes/drape.h ../../scenes/ball.h :
+ ../../benchmark.h ../../controller.h :

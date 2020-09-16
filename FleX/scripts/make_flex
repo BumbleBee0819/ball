@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cd $FLEX_PATH/src/compiler/makelinux64/;
+make clean;
+make -j 24 $*;
+cd -;

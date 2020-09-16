@@ -1,0 +1,9 @@
+#!/bin/bash
+
+cd $FLEX_PATH/bin/linux64/;
+
+CMD=./NvFlexDemoReleaseCUDA_x64
+
+$CMD $*
+
+cd -;
